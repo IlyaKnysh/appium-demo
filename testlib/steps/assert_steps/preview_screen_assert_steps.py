@@ -3,9 +3,10 @@ from selene.conditions import visible, exist, clickable
 from testlib import actions
 from testlib.matchers import check_that
 from testlib.menus import edit_menu, effects_menu
+from testlib.steps.assert_steps.common_assert_steps import BaseAssert
 
 
-class Editor:
+class Editor(BaseAssert):
 
     @staticmethod
     def check_finish_button_visible(prestep=None, timeout=None, repeat=None):
@@ -16,11 +17,6 @@ class Editor:
     def check_finish_button_not_exist(prestep=None, timeout=None, repeat=None):
         check_that(edit_menu.finish_edit_button.should_not, exist, 'Finish button is not exist', prestep=prestep,
                    timeout=timeout, repeat=repeat)
-
-    @staticmethod
-    def check_back_button_clickable(prestep=None, timeout=None, repeat=None):
-        check_that(edit_menu.editor_menu_back_button.should, clickable,
-                   'Editor menu back button is displayed and active', prestep=prestep, timeout=timeout, repeat=repeat)
 
 
 class Effects:
