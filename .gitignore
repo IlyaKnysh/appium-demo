@@ -4,8 +4,8 @@
 /allure-results
 /.git
 /venv
-/*.apk
-/*.ipa
+*.apk
+*.ipa
 /*.egg-info
 .DS_Store
 .cache
