@@ -10,8 +10,8 @@ Stack:
 
 Supports for MacOS on real devices.
 
-##Prerequisites:
-###General
+## Prerequisites:
+### General
 - node 10+ 
 
       $ brew install node
@@ -26,13 +26,13 @@ Supports for MacOS on real devices.
 Set system variables:
 - JAVA_HOME
 
-###Android
+### Android
 - install android SDK (E.G. with Android Studio)
 
 Set system variables:
 - ANDROID_HOME (tools, platform-tools, build-tools)
 
-###iOS
+### iOS
 - Xcode
 - libimobiledevice
 
@@ -44,6 +44,6 @@ Set system variables:
 
       $ brew install carthage
 
-##Install requirements:
+## Install requirements:
 
     $ pip install -e .
