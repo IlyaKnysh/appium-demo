@@ -1,0 +1,12 @@
+/.idea
+/.pytest_cache
+/test_reports
+/allure-results
+/.git
+/venv
+/*.apk
+/*.ipa
+/*.egg-info
+.DS_Store
+.cache
+*.pyc
