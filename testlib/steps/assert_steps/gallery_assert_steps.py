@@ -13,8 +13,7 @@ class SelectionMode:
 
     @staticmethod
     def check_no_select_screen_title_valid():
-        check_that(selection_mode_screen.screen_title.text,
-                   equal_to('Select items' if PLATFORM == 'IOS' else '0 items selected'),
+        check_that(selection_mode_screen.screen_title.text, equal_to('Select items'),
                    'Inscription "Select items" is displayed')
 
     @staticmethod
