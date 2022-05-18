@@ -8,8 +8,6 @@ Stack:
 - Selene
 - Allure
 
-Supports for MacOS on real devices.
-
 ## Prerequisites:
 ### General
 - node 10+ 
