@@ -1,6 +1,6 @@
-# Appium demo project
+# Appium demo project (functional approach)
 
-This is a demo project for appium tests for Android and iOS platforms.
+This is a demo project for appium tests for Android platform.
 
 Stack:
 - PyTest
@@ -32,18 +32,21 @@ Set system variables:
 Set system variables:
 - ANDROID_HOME (tools, platform-tools, build-tools)
 
-### iOS
-- Xcode
-- libimobiledevice
-
-      $ brew install libimobiledevice
-- ios-deploy (brew install ios-deploy)
-
-      $ brew install ios-deploy
-- carthage
-
-      $ brew install carthage
-
 ## Install requirements:
 
     $ pip install -e .
+
+## Run tests and generate report:
+
+### 1. install allure globally
+
+    $ npm install -g allure-commandline --save-dev
+
+### 2. Run tests
+
+    $ pytest --alluredir=allure-results
+
+### 3. Generate report
+
+    $ allure generate allure-results --clean -o allure-report && allure open
+
